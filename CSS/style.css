@@ -1,0 +1,64 @@
+  /* Overall Design
+  ========================================================================== */
+  body {
+    background-image: url(pastelcloudsbkgd.jpg);
+    background-repeat: repeat;
+    padding: 20px 20px 20px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+    /* Containers Design
+  ========================================================================== */
+  .intro-container {
+    color: #36a37f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+  }
+
+  .game-container {
+    display: flex;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #f780c1;
+    color: #36a37f;
+    font-style: bold;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px
+}
+
+  /* Game Design
+  ========================================================================== */
+.message {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    background-color: #002f55;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.cell.x {
+    color: #33cfff;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cell.o {
+    color: #6cf585;
+}
