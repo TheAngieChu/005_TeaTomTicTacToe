@@ -1,6 +1,6 @@
 let currentPlayer = 'X';
-let gameState = ['', '', '', '', '', '', '', '', ''];
-let gameOver = false;
+let gameState = ['', '', '', '', '', '', '', '', ''];     /* 9 slots==== */
+let gameOver = false;  /* If gameOver = true, the game has ended */
 
 function makeMove(cellIndex) {
     if (gameState[cellIndex] === '' && !gameOver) {
@@ -16,11 +16,12 @@ function makeMove(cellIndex) {
             gameOver = true;
         } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            document.querySelector('.message').innerText = `IT'S ${currentPlayer}'S TURN!!`;
+            document.querySelector('.message').innerText = `It's ${currentPlayer}'s Turn!!`;
         }
     }
 }
 
+/* ALL GAME WIN COMBOS */
 function checkWin() {
     const winConditions = [
         [0, 1, 2],

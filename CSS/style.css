@@ -7,6 +7,25 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
+  h1 {
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h6 {
+    text-align: center;
+    color: rgb(196, 39, 39);
+    line-height: 0%;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 0%;
+    color: #36a37f;
+  }
+
 
     /* Containers Design
   ========================================================================== */
@@ -20,18 +39,26 @@
     display: flex;
     text-align: center;
     margin: 20px auto;
-    background-color: #f780c1;
-    color: #36a37f;
+    background-color: #d16ef0;
+    color: #f7f89f;
     font-style: bold;
     justify-content: center;
     align-items: center;
-    max-width: 400px
+    max-width: 500px
 }
+
+    .music-container {
+        font-size: 16px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 0%;
+        color: #36a37f;
+    }
 
   /* Game Design
   ========================================================================== */
 .message {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
